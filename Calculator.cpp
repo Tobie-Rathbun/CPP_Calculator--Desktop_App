@@ -15,11 +15,20 @@ int main() {
     cin >> secondNumber;
 
     float result;
-    if (operatorVar == "x" || operatorVar == "x") {
+    if (operatorVar == "x" || operatorVar == "*") {
         result = firstNumber * secondNumber;
     }
+    else if (operatorVar == "/") {
+        result = firstNumber / secondNumber;
+    }
+    else if (operatorVar == "-") {
+        result = firstNumber - secondNumber; 
+    }
+    else if (operatorVar == "+") {
+        result = firstNumber + secondNumber;
+    }
 
-    cout << result;
+    cout << "Result is: " << result;
 
     return 0;
 }
