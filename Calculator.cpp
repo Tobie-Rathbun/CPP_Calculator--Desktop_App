@@ -1,34 +1,46 @@
 #include <iostream>
 using namespace std;
 
+bool running = true;
+
 int main() {
     float firstNumber;
-    cout << "Enter first number: ";
-    cin >> firstNumber;
-
     string operatorVar;
-    cout << "Enter the operator: ";
-    cin >> operatorVar;
-
     float secondNumber;
-    cout << "Enter second number: ";
-    cin >> secondNumber;
-
     float result;
-    if (operatorVar == "x" || operatorVar == "*") {
-        result = firstNumber * secondNumber;
-    }
-    else if (operatorVar == "/") {
-        result = firstNumber / secondNumber;
-    }
-    else if (operatorVar == "-") {
-        result = firstNumber - secondNumber; 
-    }
-    else if (operatorVar == "+") {
-        result = firstNumber + secondNumber;
-    }
+    string restartVar;
 
-    cout << "Result is: " << result;
+    while (running == true) {
+        cout << "Enter first number: ";
+        cin >> firstNumber;
+        
+        cout << "Enter the operator: ";
+        cin >> operatorVar;
 
+        cout << "Enter second number: ";
+        cin >> secondNumber;
+
+        if (operatorVar == "x" || operatorVar == "*") {
+            result = firstNumber * secondNumber;
+        }
+        else if (operatorVar == "/") {
+            result = firstNumber / secondNumber;
+        }
+        else if (operatorVar == "-") {
+            result = firstNumber - secondNumber; 
+        }
+        else if (operatorVar == "+") {
+            result = firstNumber + secondNumber;
+        }
+
+        cout << "Result is: " << result << endl;
+        cout << "Again? [y/n]: ";
+        cin >> restartVar;
+
+        if (restartVar == "n" || restartVar == "N") {
+            running = false;
+        }
+    
     return 0;
+    }
 }
