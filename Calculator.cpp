@@ -42,7 +42,6 @@ int main() {
         if (restartVar == "n" || restartVar == "N") {
             running = false;
         }
-    
-    return 0;
     }
+    return 0;
 }
