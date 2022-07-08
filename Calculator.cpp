@@ -33,6 +33,15 @@ int main() {
         else if (operatorVar == "log10" || operatorVar == "log") {
             result = log10(firstNumber);
         }
+        else if (operatorVar == "cos") {    
+            result = cos(firstNumber);
+        }
+        else if (operatorVar == "sin") {
+            result = sin(firstNumber);
+        }
+        else if (operatorVar == "tan") {
+            result = tan(firstNumber);
+        }
         else {
             cout << "Enter second number: ";
             cin >> secondNumber;
