@@ -1,4 +1,5 @@
 #include <iostream>
+#include <math.h>
 using namespace std;
 
 //test change
@@ -33,6 +34,9 @@ int main() {
         }
         else if (operatorVar == "+") {
             result = firstNumber + secondNumber;
+        }
+        else if (operatorVar == "^") {
+            result = pow(firstNumber, secondNumber);
         }
 
         cout << "Result is: " << result << endl;
