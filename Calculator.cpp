@@ -30,8 +30,11 @@ int main() {
         else if (operatorVar == "%") {
             result = firstNumber * .01;
         }
-        else if (operatorVar == "log10" || operatorVar == "log") {
+        else if (operatorVar == "log10") {
             result = log10(firstNumber);
+        }
+        else if (operatorVar == "ln" || operatorVar == "log") {
+            result = log(firstNumber);
         }
         else if (operatorVar == "cos") {    
             result = cos(firstNumber);
