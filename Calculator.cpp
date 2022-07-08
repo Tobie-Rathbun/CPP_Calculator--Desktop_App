@@ -1,5 +1,6 @@
 #include <iostream>
 #include <math.h>
+#include <cmath>
 using namespace std;
 
 //test change
@@ -28,6 +29,9 @@ int main() {
         }
         else if (operatorVar == "%") {
             result = firstNumber * .01;
+        }
+        else if (operatorVar == "log10" || operatorVar == "log") {
+            result = log10(firstNumber);
         }
         else {
             cout << "Enter second number: ";
