@@ -10,7 +10,7 @@ int main() {
     float firstNumber;
     string operatorVar;
     float secondNumber;
-    float result;
+    float result = 1;
     string restartVar;
 
     while (running == true) {
@@ -20,23 +20,31 @@ int main() {
         cout << "Enter the operator: ";
         cin >> operatorVar;
 
-        cout << "Enter second number: ";
-        cin >> secondNumber;
+        if (operatorVar == "!") {
+            for(int i=1; i<=firstNumber; ++i)
+            {
+                result *= i;
+            }
+        }
+        else {
+            cout << "Enter second number: ";
+            cin >> secondNumber;
 
-        if (operatorVar == "x" || operatorVar == "*") {
-            result = firstNumber * secondNumber;
-        }
-        else if (operatorVar == "/") {
-            result = firstNumber / secondNumber;
-        }
-        else if (operatorVar == "-") {
-            result = firstNumber - secondNumber; 
-        }
-        else if (operatorVar == "+") {
-            result = firstNumber + secondNumber;
-        }
-        else if (operatorVar == "^") {
-            result = pow(firstNumber, secondNumber);
+            if (operatorVar == "x" || operatorVar == "*") {
+                result = firstNumber * secondNumber;
+            }
+            else if (operatorVar == "/") {
+                result = firstNumber / secondNumber;
+            }
+            else if (operatorVar == "-") {
+                result = firstNumber - secondNumber; 
+            }
+            else if (operatorVar == "+") {
+                result = firstNumber + secondNumber;
+            }
+            else if (operatorVar == "^") {
+                result = pow(firstNumber, secondNumber);
+            }
         }
 
         cout << "Result is: " << result << endl;
