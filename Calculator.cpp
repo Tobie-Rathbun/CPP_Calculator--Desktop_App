@@ -42,6 +42,9 @@ int main() {
         else if (operatorVar == "tan") {
             result = tan(firstNumber);
         }
+        else if (operatorVar == "2") {
+            result = firstNumber * firstNumber;
+        }
         else {
             cout << "Enter second number: ";
             cin >> secondNumber;
@@ -58,7 +61,7 @@ int main() {
             else if (operatorVar == "+") {
                 result = firstNumber + secondNumber;
             }
-            else if (operatorVar == "^") {
+            else if (operatorVar == "^" || operatorVar == "e^x") {
                 result = pow(firstNumber, secondNumber);
             }
         }
