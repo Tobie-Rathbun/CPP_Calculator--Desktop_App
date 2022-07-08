@@ -26,6 +26,9 @@ int main() {
                 result *= i;
             }
         }
+        else if (operatorVar == "%") {
+            result = firstNumber * .01;
+        }
         else {
             cout << "Enter second number: ";
             cin >> secondNumber;
