@@ -45,6 +45,9 @@ int main() {
         else if (operatorVar == "2") {
             result = firstNumber * firstNumber;
         }
+        else if (operatorVar == "3") {
+            result = firstNumber * firstNumber * firstNumber;
+        }
         else {
             cout << "Enter second number: ";
             cin >> secondNumber;
