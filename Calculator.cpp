@@ -39,11 +39,20 @@ int main() {
         else if (operatorVar == "cos") {    
             result = cos(firstNumber);
         }
+        else if (operatorVar == "cosh") {    
+            result = cosh(firstNumber);
+        }
         else if (operatorVar == "sin") {
             result = sin(firstNumber);
         }
+        else if (operatorVar == "sinh") {
+            result = sinh(firstNumber);
+        }
         else if (operatorVar == "tan") {
             result = tan(firstNumber);
+        }
+        else if (operatorVar == "tanh") {
+            result = tanh(firstNumber);
         }
         else if (operatorVar == "2") {
             result = firstNumber * firstNumber;
